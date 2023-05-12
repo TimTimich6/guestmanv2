@@ -1,6 +1,6 @@
-import { GuestI } from "./../../../../../lib/prisma/guest";
+import { GuestI } from "@/lib/prisma/guest";
 import { NextRequest, NextResponse } from "next/server";
-import { deleteGuest } from "../../../../../lib/prisma/guest";
+import { deleteGuest } from "@/lib/prisma/guest";
 
 export async function POST(req: NextRequest) {
   const body: { data: GuestI } = await req.json();

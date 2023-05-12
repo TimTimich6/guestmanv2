@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { createGuest, getGuests, GuestI } from "../../../../lib/prisma/guest";
+import { createGuest, getGuests, GuestI } from "@/lib/prisma/guest";
 
 export async function POST(req: NextRequest) {
   const body: GuestI = await req.json();

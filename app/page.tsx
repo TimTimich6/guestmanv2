@@ -2,7 +2,7 @@
 import Guest from "./components/Guest";
 import { FormEvent, useEffect, useState } from "react";
 import axios from "axios";
-import { GuestI } from "../../lib/prisma/guest";
+import { GuestI } from "@/lib/prisma/guest";
 
 export default function Home() {
   const [name, setName] = useState<string>("");
